@@ -47,28 +47,28 @@
   $ pip install nose
   $ export CODAR_APPDIR=fake
   $ tests/run-all.sh
-test_cheetah.test_model.test_bad_scheduler_options ... ok
-test_cheetah.test_model.test_default_scheduler_options ... ok
-test_cheetah.test_model.test_codes_ordering ... ERROR
-test_cheetah.test_model.test_error_campaign_undefined_code ... ok
-test_cheetah.test_model.test_error_campaign_missing_adios_xml ... ok
-test_cheetah.test_model.test_error_nodes_too_small ... ok
-test_cheetah.test_model.test_nodes_sosflow ... ERROR
-test_cheetah.test_model.test_node_layout_repeated_code ... ERROR
-test_cheetah.test_model.test_node_layout_bad_ppn ... ok
-test_cheetah.test_model.test_node_layout_bad_codes_per_node ... ok
-test_cheetah.test_model.test_node_layout_bad_shared_nodes ... ok
-test_cheetah.test_model.test_error_missing_app_dir ... ok
-test_cheetah.test_parameters.test_instance_nprocs_only ... ok
-test_cheetah.test_parameters.test_derived_params ... ok
-test_cheetah.test_parameters.test_derived_params_cross_code ... ok
-Failure: ModuleNotFoundError (No module named 'codar.workflow') ... ERROR
-Failure: ModuleNotFoundError (No module named 'codar.workflow') ... ERROR
+  test_cheetah.test_model.test_bad_scheduler_options ... ok
+  test_cheetah.test_model.test_default_scheduler_options ... ok
+  test_cheetah.test_model.test_codes_ordering ... ERROR
+  test_cheetah.test_model.test_error_campaign_undefined_code ... ok
+  test_cheetah.test_model.test_error_campaign_missing_adios_xml ... ok
+  test_cheetah.test_model.test_error_nodes_too_small ... ok
+  test_cheetah.test_model.test_nodes_sosflow ... ERROR
+  test_cheetah.test_model.test_node_layout_repeated_code ... ERROR
+  test_cheetah.test_model.test_node_layout_bad_ppn ... ok
+  test_cheetah.test_model.test_node_layout_bad_codes_per_node ... ok
+  test_cheetah.test_model.test_node_layout_bad_shared_nodes ... ok
+  test_cheetah.test_model.test_error_missing_app_dir ... ok
+  test_cheetah.test_parameters.test_instance_nprocs_only ... ok
+  test_cheetah.test_parameters.test_derived_params ... ok
+  test_cheetah.test_parameters.test_derived_params_cross_code ... ok
+  Failure: ModuleNotFoundError (No module named 'codar.workflow') ... ERROR
+  Failure: ModuleNotFoundError (No module named 'codar.workflow') ... ERROR
 
-======================================================================
-ERROR: test_cheetah.test_model.test_codes_ordering
-----------------------------------------------------------------------
-Traceback (most recent call last):
+  ======================================================================
+  ERROR: test_cheetah.test_model.test_codes_ordering
+  ----------------------------------------------------------------------
+  Traceback (most recent call last):
   File "/home/igor/test1/cheetah/venv-cheetah/lib/python3.7/site-packages/nose/case.py", line 198, in runTest
     self.test(*self.arg)
   File "/home/igor/test1/cheetah/tests/nose/test_cheetah/test_model.py", line 89, in test_codes_ordering
@@ -79,12 +79,12 @@ Traceback (most recent call last):
     obj, end = self.raw_decode(s, idx=_w(s, 0).end())
   File "/usr/local/Anaconda3-2019.03/lib/python3.7/json/decoder.py", line 355, in raw_decode
     raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 2)
+    json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 2)
 
-======================================================================
-ERROR: test_cheetah.test_model.test_nodes_sosflow
-----------------------------------------------------------------------
-Traceback (most recent call last):
+  ======================================================================
+  ERROR: test_cheetah.test_model.test_nodes_sosflow
+  ----------------------------------------------------------------------
+  Traceback (most recent call last):
   File "/home/igor/test1/cheetah/venv-cheetah/lib/python3.7/site-packages/nose/case.py", line 198, in runTest
     self.test(*self.arg)
   File "/home/igor/test1/cheetah/tests/nose/test_cheetah/test_model.py", line 208, in test_nodes_sosflow
@@ -95,12 +95,12 @@ Traceback (most recent call last):
     machine.processes_per_node)
   File "/home/igor/test1/cheetah/codar/cheetah/model.py", line 810, in insert_sosflow
     working_dir=self.run_path)
-TypeError: __init__() missing 1 required positional argument: 'sched_args'
+  TypeError: __init__() missing 1 required positional argument: 'sched_args'
 
-======================================================================
-ERROR: test_cheetah.test_model.test_node_layout_repeated_code
-----------------------------------------------------------------------
-Traceback (most recent call last):
+  ======================================================================
+  ERROR: test_cheetah.test_model.test_node_layout_repeated_code
+  ----------------------------------------------------------------------
+  Traceback (most recent call last):
   File "/home/igor/test1/cheetah/venv-cheetah/lib/python3.7/site-packages/nose/case.py", line 198, in runTest
     self.test(*self.arg)
   File "/home/igor/test1/cheetah/tests/nose/test_cheetah/test_model.py", line 216, in test_node_layout_repeated_code
@@ -109,12 +109,12 @@ Traceback (most recent call last):
     self._validate()
   File "/home/igor/test1/cheetah/codar/savanna/node_layout.py", line 90, in _validate
     raise ValueError("{} found in node-layout multiple "
-AttributeError: 'ValueError' object has no attribute 'format'
+  AttributeError: 'ValueError' object has no attribute 'format'
 
-======================================================================
-ERROR: Failure: ModuleNotFoundError (No module named 'codar.workflow')
-----------------------------------------------------------------------
-Traceback (most recent call last):
+  ======================================================================
+  ERROR: Failure: ModuleNotFoundError (No module named 'codar.workflow')
+  ----------------------------------------------------------------------
+  Traceback (most recent call last):
   File "/home/igor/test1/cheetah/venv-cheetah/lib/python3.7/site-packages/nose/failure.py", line 39, in runTest
     raise self.exc_val.with_traceback(self.tb)
   File "/home/igor/test1/cheetah/venv-cheetah/lib/python3.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
@@ -133,12 +133,12 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
   File "/home/igor/test1/cheetah/tests/nose/test_workflow/test_model.py", line 4, in <module>
     from codar.workflow.model import Pipeline, Run, srun, aprun
-ModuleNotFoundError: No module named 'codar.workflow'
+  ModuleNotFoundError: No module named 'codar.workflow'
 
-======================================================================
-ERROR: Failure: ModuleNotFoundError (No module named 'codar.workflow')
-----------------------------------------------------------------------
-Traceback (most recent call last):
+  ======================================================================
+  ERROR: Failure: ModuleNotFoundError (No module named 'codar.workflow')
+  ----------------------------------------------------------------------
+  Traceback (most recent call last):
   File "/home/igor/test1/cheetah/venv-cheetah/lib/python3.7/site-packages/nose/failure.py", line 39, in runTest
     raise self.exc_val.with_traceback(self.tb)
   File "/home/igor/test1/cheetah/venv-cheetah/lib/python3.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
@@ -157,13 +157,13 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
   File "/home/igor/test1/cheetah/tests/nose/test_workflow/test_scheduler.py", line 5, in <module>
     from codar.workflow.scheduler import JobList
-ModuleNotFoundError: No module named 'codar.workflow'
+  ModuleNotFoundError: No module named 'codar.workflow'
 
-----------------------------------------------------------------------
-Ran 17 tests in 0.072s
+  ----------------------------------------------------------------------
+  Ran 17 tests in 0.072s
 
-FAILED (errors=5)
-```
+  FAILED (errors=5)
+  ```
 
 
 
