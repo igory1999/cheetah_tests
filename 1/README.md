@@ -40,8 +40,7 @@
   ...
   Successfully installed cheetah
   You are using pip version 19.0.3, however version 19.1.1 is available.
-  You should consider upgrading via the 'pip install --upgrade pip' command.                                                                                                          ``` 
-
+  You should consider upgrading via the 'pip install --upgrade pip' command.                                                                                                          ```
 # Tests
   ```
   $ pip install nose
