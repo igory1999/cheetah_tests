@@ -20,20 +20,20 @@ Laptop with Ubuntu 18.04, Anaconda3/2019.03
   /usr/local/Anaconda3-2019.03/bin/pip
   ```
 
-### virtualenv
-    ```
-    $ cd
-    $ mkdir test1
-    $ cd test1
-    $ git clone https://github.com/CODARcode/cheetah.git
-    ...
-    $ cd cheetah
-    $ python3 -m venv venv-cheetah
-    $ source venv-cheetah/bin/activate
-    (venv-cheetah) $ pip install --editable .
-    ...
-    Successfully installed cheetah
-    You are using pip version 19.0.3, however version 19.1.1 is available.
-    You should consider upgrading via the 'pip install --upgrade pip' command.                                                                                                          ``` 
+## virtualenv
+  ```
+  $ cd
+  $ mkdir test1
+  $ cd test1
+  $ git clone https://github.com/CODARcode/cheetah.git
+  ...
+  $ cd cheetah
+  $ python3 -m venv venv-cheetah
+  $ source venv-cheetah/bin/activate
+  (venv-cheetah) $ pip install --editable .
+  ...
+  Successfully installed cheetah
+  You are using pip version 19.0.3, however version 19.1.1 is available.
+  You should consider upgrading via the 'pip install --upgrade pip' command.                                                                                                          ``` 
 
 
