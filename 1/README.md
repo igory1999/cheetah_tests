@@ -23,6 +23,7 @@
 ## virtualenv
   ```
   $ cd
+
   $ mkdir test1
   $ cd test1
   $ git clone https://github.com/CODARcode/cheetah.git
