@@ -2,7 +2,7 @@
 
   Laptop with Ubuntu 18.04, Anaconda3/2019.03
 
-## Python
+  ## Python
   ```
   $ module load Anaconda3
   $ python
@@ -20,7 +20,7 @@
   /usr/local/Anaconda3-2019.03/bin/pip
   ```
 
-## virtualenv
+  ## virtualenv
   ```
   $ cd
   $ mkdir test1
@@ -41,6 +41,7 @@
   Successfully installed cheetah
   You are using pip version 19.0.3, however version 19.1.1 is available.
   You should consider upgrading via the 'pip install --upgrade pip' command.                                                                                                          ``` 
+
 # Tests
   ```
   $ pip install nose
