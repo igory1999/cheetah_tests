@@ -2,8 +2,8 @@
 
 Laptop with Ubuntu 18.04, Anaconda3/2019.03
 
-# Python
-  '''
+## Python
+  ```
   igor@xps:~/cheetah_tests/1$ module load Anaconda3
   igor@xps:~/cheetah_tests/1$ python
   Python 3.7.3 (default, Mar 27 2019, 22:11:17) 
@@ -16,6 +16,8 @@ Laptop with Ubuntu 18.04, Anaconda3/2019.03
   /usr/local/Anaconda3-2019.03/bin/python3
   igor@xps:~/cheetah_tests/1$ which pip
   /usr/local/Anaconda3-2019.03/bin/pip
-  '''
+  ```
+
+
 
 
