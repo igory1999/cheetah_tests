@@ -23,7 +23,6 @@
 ## virtualenv
   ```
   $ cd
-
   $ mkdir test1
   $ cd test1
   $ git clone https://github.com/CODARcode/cheetah.git
@@ -65,9 +64,9 @@
   test_cheetah.test_parameters.test_derived_params_cross_code ... ok
   Failure: ModuleNotFoundError (No module named 'codar.workflow') ... ERROR
   Failure: ModuleNotFoundError (No module named 'codar.workflow') ... ERROR
-  ======================================================================
+
   ERROR: test_cheetah.test_model.test_codes_ordering
-  ----------------------------------------------------------------------
+
   Traceback (most recent call last):
   File "/home/igor/test1/cheetah/venv-cheetah/lib/python3.7/site-packages/nose/case.py", line 198, in runTest
     self.test(*self.arg)
@@ -80,9 +79,9 @@
   File "/usr/local/Anaconda3-2019.03/lib/python3.7/json/decoder.py", line 355, in raw_decode
     raise JSONDecodeError("Expecting value", s, err.value) from None
     json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 2)
-  ======================================================================
+
   ERROR: test_cheetah.test_model.test_nodes_sosflow
-  ----------------------------------------------------------------------
+
   Traceback (most recent call last):
   File "/home/igor/test1/cheetah/venv-cheetah/lib/python3.7/site-packages/nose/case.py", line 198, in runTest
     self.test(*self.arg)
@@ -95,9 +94,9 @@
   File "/home/igor/test1/cheetah/codar/cheetah/model.py", line 810, in insert_sosflow
     working_dir=self.run_path)
   TypeError: __init__() missing 1 required positional argument: 'sched_args'
-  ======================================================================
+
   ERROR: test_cheetah.test_model.test_node_layout_repeated_code
-  ----------------------------------------------------------------------
+
   Traceback (most recent call last):
   File "/home/igor/test1/cheetah/venv-cheetah/lib/python3.7/site-packages/nose/case.py", line 198, in runTest
     self.test(*self.arg)
@@ -108,9 +107,9 @@
   File "/home/igor/test1/cheetah/codar/savanna/node_layout.py", line 90, in _validate
     raise ValueError("{} found in node-layout multiple "
   AttributeError: 'ValueError' object has no attribute 'format'
-  ======================================================================
+
   ERROR: Failure: ModuleNotFoundError (No module named 'codar.workflow')
-  ----------------------------------------------------------------------
+
   Traceback (most recent call last):
   File "/home/igor/test1/cheetah/venv-cheetah/lib/python3.7/site-packages/nose/failure.py", line 39, in runTest
     raise self.exc_val.with_traceback(self.tb)
@@ -131,9 +130,9 @@
   File "/home/igor/test1/cheetah/tests/nose/test_workflow/test_model.py", line 4, in <module>
     from codar.workflow.model import Pipeline, Run, srun, aprun
   ModuleNotFoundError: No module named 'codar.workflow'
-  ======================================================================
+
   ERROR: Failure: ModuleNotFoundError (No module named 'codar.workflow')
-  ----------------------------------------------------------------------
+
   Traceback (most recent call last):
   File "/home/igor/test1/cheetah/venv-cheetah/lib/python3.7/site-packages/nose/failure.py", line 39, in runTest
     raise self.exc_val.with_traceback(self.tb)
@@ -154,7 +153,7 @@
   File "/home/igor/test1/cheetah/tests/nose/test_workflow/test_scheduler.py", line 5, in <module>
     from codar.workflow.scheduler import JobList
   ModuleNotFoundError: No module named 'codar.workflow'
-  ----------------------------------------------------------------------
+
   Ran 17 tests in 0.072s
   FAILED (errors=5)
   ```
