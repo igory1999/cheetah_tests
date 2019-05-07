@@ -21,7 +21,6 @@ Laptop with Ubuntu 18.04, Anaconda3/2019.03
   ```
 
 ### virtualenv
-
     ```
     $ cd
     $ mkdir test1
