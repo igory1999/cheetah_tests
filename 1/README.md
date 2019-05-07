@@ -1,6 +1,6 @@
-# Environment:
+# Environment
 
-Laptop with Ubuntu 18.04, Anaconda3/2019.03
+  Laptop with Ubuntu 18.04, Anaconda3/2019.03
 
 ## Python
   ```
@@ -28,6 +28,12 @@ Laptop with Ubuntu 18.04, Anaconda3/2019.03
   $ git clone https://github.com/CODARcode/cheetah.git
   ...
   $ cd cheetah
+  $ git branch
+  * master
+  $ git checkout node-layout
+  $ git branch
+  master
+  * node-layout
   $ python3 -m venv venv-cheetah
   $ source venv-cheetah/bin/activate
   (venv-cheetah) $ pip install --editable .
@@ -35,5 +41,13 @@ Laptop with Ubuntu 18.04, Anaconda3/2019.03
   Successfully installed cheetah
   You are using pip version 19.0.3, however version 19.1.1 is available.
   You should consider upgrading via the 'pip install --upgrade pip' command.                                                                                                          ``` 
+
+# Tests
+  ```
+  $ pip install nose
+  $ export CODAR_APPDIR=fake
+  $ tests/run-all.sh
+
+
 
 
