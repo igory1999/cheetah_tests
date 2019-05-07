@@ -41,7 +41,6 @@
   Successfully installed cheetah
   You are using pip version 19.0.3, however version 19.1.1 is available.
   You should consider upgrading via the 'pip install --upgrade pip' command.                                                                                                          ``` 
-
 # Tests
   ```
   $ pip install nose
@@ -64,7 +63,8 @@
   test_cheetah.test_parameters.test_derived_params_cross_code ... ok
   Failure: ModuleNotFoundError (No module named 'codar.workflow') ... ERROR
   Failure: ModuleNotFoundError (No module named 'codar.workflow') ... ERROR
-
+  ```
+  ```
   ERROR: test_cheetah.test_model.test_codes_ordering
 
   Traceback (most recent call last):
