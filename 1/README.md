@@ -163,7 +163,7 @@
   codar.workflow was renamed to codar.savanna
   ```
 # Second attempt
-  In these two files, `workflow` was replaced by `codar`
+  In these two files, `workflow` was replaced by `savanna`
   ```
   tests/nose/test_workflow/test_model.py:from codar.workflow.model import Pipeline, Run, srun, aprun
   tests/nose/test_workflow/test_scheduler.py:from codar.workflow.scheduler import JobList
