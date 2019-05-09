@@ -371,4 +371,21 @@
 
   FAILED (errors=4)
   ```  
+# Reading json line by line?
+  These lines from `/home/igor/test1/cheetah/tests/nose/test_cheetah/test_model.py`, on which the code crashes, at first glance, make no sense:
+  ```
+    fobs = []
+    with open(fob_path) as f:
+        for line in f:
+            fobs.append(json.loads(line))
 
+  ```
+  either one should do
+  ```
+  json.loads(f.read())
+  ```
+  or, if reading json line by line is needed for some reason, then
+  ```
+  fobs.append(line)
+  ```
+ 
