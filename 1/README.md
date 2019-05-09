@@ -390,4 +390,10 @@
   ```
   `json.loads` crashes on a line, because it is not correct json.
   
- 
+  Considering the subsequent usage,
+  ```  
+    for fob in fobs:
+        fob_order = [run['name'] for run in fob['runs']]
+        assert_equal(fob_order, correct_order)
+  ```
+  it looks like fobs is supposed to be a list of runs and therefore json should be looped over subjsons and not over lines.
