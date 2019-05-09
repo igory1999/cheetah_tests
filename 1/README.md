@@ -372,7 +372,7 @@
   FAILED (errors=4)
   ```  
 # Reading json line by line?
-  These lines from `/home/igor/test1/cheetah/tests/nose/test_cheetah/test_model.py`, on which the code crashes, at first glance, make no sense:
+  These lines from `cheetah/tests/nose/test_cheetah/test_model.py`, on which the code crashes, at first glance, make no sense:
   ```
     fobs = []
     with open(fob_path) as f:
@@ -388,4 +388,6 @@
   ```
   fobs.append(line)
   ```
+  `json.loads` crashes on a line, because it is not correct json.
+  
  
